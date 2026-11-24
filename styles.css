@@ -6,6 +6,7 @@
 :root {
   --brand: #E00500;
   --brand-dark: #B50400;
+  --brand-yellow: #F9C111;
   --bg: #FFFFFF;
   --text: #222222;
   --muted: #6B7280;
@@ -84,17 +85,10 @@ a:hover {
   color: var(--text);
 }
 
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--brand);
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
+.brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
 }
 
 .brand-name {
@@ -109,7 +103,9 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 4px 12px;
-  background: var(--surface);
+  background: var(--brand-yellow);
+  color: var(--text);
+  font-weight: 600;
 }
 
 /* --------------------------------------------------------------------------
@@ -117,10 +113,18 @@ a:hover {
    -------------------------------------------------------------------------- */
 
 .hero {
-  background: linear-gradient(180deg, #fff 0%, #FFF6F6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF8E3 100%);
   border-bottom: 1px solid var(--border);
   padding: 56px 0 48px;
   text-align: center;
+}
+
+.hero-logo {
+  width: 88px;
+  height: auto;
+  margin: 0 auto 18px;
+  display: block;
+  filter: drop-shadow(0 6px 16px rgba(249, 193, 17, 0.35));
 }
 
 .hero-title {
@@ -129,6 +133,16 @@ a:hover {
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--text);
+}
+
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 5px;
+  margin: 14px auto 0;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--brand) 0%, var(--brand-yellow) 100%);
 }
 
 .hero-subtitle {
@@ -144,6 +158,7 @@ a:hover {
   color: var(--muted);
   background: #fff;
   border: 1px solid var(--border);
+  border-left: 4px solid var(--brand-yellow);
   border-radius: 999px;
   padding: 6px 16px;
 }
@@ -217,8 +232,9 @@ a:hover {
 .toc-list a.active {
   color: var(--brand);
   background: #fff;
-  border-left-color: var(--brand);
+  border-left-color: var(--brand-yellow);
   font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--brand-yellow);
 }
 
 /* Content sections */
@@ -249,7 +265,7 @@ a:hover {
   display: inline-block;
   width: 6px;
   height: 22px;
-  background: var(--brand);
+  background: linear-gradient(180deg, var(--brand) 0%, var(--brand-yellow) 100%);
   border-radius: 3px;
   margin-right: 10px;
   vertical-align: -3px;
@@ -286,7 +302,7 @@ a:hover {
 
 .site-footer {
   background: var(--surface);
-  border-top: 1px solid var(--border);
+  border-top: 3px solid var(--brand-yellow);
   padding: 28px 0;
 }
 
