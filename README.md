@@ -71,6 +71,6 @@ vercel --prod   # production deployment
 
 - Contact / privacy email: `ademseddikadem@gmail.com`
 - Operator: Adem Seddik, Tunisia
-- The homepage contains `<meta name="google-site-verification" content="__PLACEHOLDER__">`
-  — replace `__PLACEHOLDER__` with the real Google Search Console value before deploying.
+- The homepage contains `<meta name="google-site-verification" content="4Itu-ewyNa8YFQB4Q2CWP-FFPDkBSFQiHcmTzT5gucU">`
+  (Google Search Console verification, already set).
 - Google Play link points to `com.adem1.habichou` (listing shows "coming soon" until published).
