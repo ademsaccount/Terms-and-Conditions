@@ -10,9 +10,12 @@ operating in Tunisia. It serves the public legal pages of the app.
 | Route | File | Content |
 |---|---|---|
 | `/` | `index.html` | Homepage: app description, Google Play link, footer links |
+| `/support` | `support.html` | Support: contact email, response time, FAQ |
 | `/privacy` | `privacy.html` | Privacy Policy |
 | `/terms` | `terms.html` | Terms and Conditions (all 20 sections) |
 | `/delete-account` | `delete-account.html` | How to request account & data deletion |
+
+`sitemap.xml` lists all five routes.
 
 ## Tech stack
 
